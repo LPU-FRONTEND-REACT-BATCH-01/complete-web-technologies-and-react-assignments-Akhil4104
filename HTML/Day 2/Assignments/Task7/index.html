@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <br>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required placeholder="First Name">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required placeholder="Last Name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+
+        <label for="room">Room Type:</label>
+        <select id="room" name="room" required>
+            <option value="">Select Room Type</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="xl">XL</option>
+        </select><br><br>
+        <label for="guest">Number of guests:</label>
+        <input type="number" id="guest" name="guest" min="1" max="10" required placeholder="Number of guests"><br><br>
+
+        <label for="arrival">Arrival Date:</label>
+        <input type="date" id="arrival" name="arrival" required placeholder="Arrival Date"><br><br>
+
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure" name="departure" required placeholder="Departure Date"><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+        </select><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required >
+        <label for="terms"> I agree to the terms and conditions</label><br><br>
+
+        <input type="submit" value="Submit">
+</body>
+</html>
