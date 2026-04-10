@@ -74,26 +74,87 @@
 // console.log(str.includes('z'));
 
 
-let user_data = {
-    id: 1,
-    name: "Jhon",
-    "age":12
-}
+// let user_data = {
+//     id: 1,
+//     name: "Jhon",
+//     "age":12
+// }
 
 // Object.freeze(user_data);
-Object.seal(user_data);
-user_data.city = "Delhi";
+// Object.seal(user_data);
+// user_data.city = "Delhi";
 // console.log(user_data);
 // console.log(user_data.id);
 // console.log(user_data.name);
 // console.log(user_data.age);
 // console.log(user_data["age"]);
 
-let keys = Object.keys(user_data);
-console.log(keys);
+// let keys = Object.keys(user_data);
+// console.log(keys);
 
-let values = Object.values(user_data);
-console.log(values);
+// let values = Object.values(user_data);
+// console.log(values);
 
-let pairs = Object.entries(user_data);
-console.log(pairs);
+// let pairs = Object.entries(user_data);
+// console.log(pairs);
+
+// let arr = [12, "hello", true, undefined]
+
+// console.log(arr);
+
+// arr.push(21)
+// console.log(arr);
+
+// arr.pop();
+// console.log(arr);
+
+// arr.shift();
+// console.log(arr);
+
+// arr.unshift(1);
+// console.log(arr);
+
+// console.log(arr.length);
+
+// console.log(arr.at(3));
+
+// console.log(arr.join("-"));
+
+// let arr1 = [1, 2, 3];
+// let arr2 = ["hello", "bye"];
+// console.log(arr.concat(arr1, arr2));
+
+let arr = ["hi", "hello", "bye"];
+let arr1 = [1,2,3,4,5,6];
+// arr1.map((value, index)=>{
+//     console.log(value*2);
+// })
+
+let total = arr1.reduce((prev, curr) => {
+    return prev + curr;
+})
+console.log(total);
+
+
+let cart_data = [
+    {
+        id: 1,
+        name:"Watch",
+        price:2999
+    },
+    {
+        id: 2,
+        name: "Shoes",
+        price: 199
+    },
+    {
+        id: 3,
+        name:"Earphone",
+        price:299
+    }
+]
+let total_amount = cart_data.reduce((prev, value) => {
+    return prev + value.price;
+},0)
+
+console.log(total_amount);
