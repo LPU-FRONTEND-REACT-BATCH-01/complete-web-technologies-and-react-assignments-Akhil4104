@@ -46,9 +46,8 @@ let getTransaction = () => {
 };
 
 deposit(2000);
-withdraw(2500);
-deposit(1000); 
-withdraw(5000);
+withdraw(500);
+deposit(1000);
 
 getBalance();
 getTransaction();
