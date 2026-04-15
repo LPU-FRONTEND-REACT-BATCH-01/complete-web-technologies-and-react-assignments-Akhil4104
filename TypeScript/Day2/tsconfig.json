@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "noEmitOnError": true,
+        "strict": false,
+        "module": "commonjs",
+        "target": "es6",
+        "removeComments": true,
+        // "sourceMap": true
+    }
+    ,
+    "include": ["./src"],
+    // "exclude": ["./dist"]
+}
