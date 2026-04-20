@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mania</title>
+</head>
+<body>
+      <h1><mark><img src="Pizza.png" alt="Pizza Icon" width="30px">Pizza Mania<img src="Pizza.png" alt="Pizza Icon" width="30px"></mark></h1>
+    <fieldset>
+        <legend><img src="Pizza.png" alt="Pizza Icon" width="30px">Pizza Order Here<img src="Pizza.png" alt="Pizza Icon" width="30px"></legend>
+        
+        <form action="" method="post" >
+            <label for="firstname" >First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name"> <br><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com"><br><br>
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Ex-9876543210"><br><br>
+            <label for="deliverydate">Preferred Delivery Date:</label>
+            <input type="date" id="deliverydate" name="deliverydate"><br><br>
+            <label for="size">Size:</label>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>    
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+            <br><br>
+            <label for="outlet"><mark>Outlet:</mark></label>
+            <select id="outlet" name="outlet">
+                <option value="">Select Outlet</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+            </select><br><br>
+            <h1>Menu:</h1>
+            <table cellpadding="10" cellspacing="10" >
+                <tr>
+                    <td><img src="https://www.dominos.co.in/files/items/Margherita.jpg" alt="Margherita Pizza" width="100"></td>
+                    <td><input type="checkbox" id="margherita" name="menu" value="margherita"><label for="margherita"> Hawaiian(150.00 &#8377; <del>170.00₹)</del> </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.dominos.co.in/files/items/Pepperoni.jpg" alt="Pepperoni Pizza" width="100"></td>
+                    <td><input type="checkbox" id="pepperoni" name="menu" value="pepperoni"><label for="pepperoni"> Pepperoni(180.00 &#8377; <del>200.00₹)</del> </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><img src="BBQ.jpg" alt="BBQ Chicken Pizza" width="100"></td>
+                    <td><input type="checkbox" id="bbqchicken" name="menu" value="bbqchicken"><label for="bbqchicken"> BBQ Chicken(200.00 &#8377; <del>220.00₹)</del> </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><img src="Paneer_Makhni.jpg" alt="Paneer Makhani Pizza" width="100"></td>
+                    <td><input type="checkbox" id="paneermakhani" name="menu" value="paneermakhani"><label for="paneermakhani"> Paneer Makhani(170.00 &#8377; <del>190.00₹)</del> </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                </tr>
+            </table>
+            <br><br>
+            <h1>Extra Details:</h1>
+            <table cellpadding="10" cellspacing="10">
+                <tr>
+                    <td><img src="credit.png" alt="Credit Card" width="100"></td>
+                    <td>Credit Card:</td>
+                    <td><input type="text" placeholder="1234-5678-9123-1111"></td>
+                    <td><input type="submit" value="Verify Card"></td>
+                </tr>
+                <tr>
+                    <td><img src="location.jpg" alt="Location" width="100"></td>
+                    <td>Pin:</td>
+                    <td><input type="text" placeholder="421604"></td>
+                </tr>
+                <tr>
+                    <td><img src="picture.png" alt="Picture" width="100"></td>
+                    <td><mark>Upload photo for discount:</mark></td>
+                    <td><input type="file" accept="image/*"></td>
+                </tr>
+
+                <tr>
+                    <td><img src="Note.png" alt="Notes" width="100"></td>
+                    <td><mark>Additional Notes:</mark></td>
+                    <td><textarea rows="4" cols="50" placeholder="If any additional instructions..."></textarea></td>
+                </tr>
+                <tr>
+                    <td><img src="star.png" alt="Star Rating" width="100"></td>
+                    <td><mark>Rating:</mark></td>
+                    <td><input type="range" min="1" max="5"></td>
+                    <td><input type="submit" value="Submit Order"></td>
+                </tr>
+            </table>
+
+        </form>
+    </fieldset>
+</body>
+</html>
