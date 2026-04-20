@@ -121,13 +121,26 @@
 
 // export default App;
 
-import React from 'react'
-import Slider from './Day2/Task/Slider';
+// import React from 'react'
+// import Slider from './Day2/Task/Slider';
 
+// const App = () => {
+//   return (
+//     <Slider/>
+//   )
+// }
+
+// export default App;
+
+
+
+//Day 3
+import React from 'react'
+import Controlled from './Day3/Practice/Controlled';
+// import FetchingData from './Day3/Practice/FetchingData';
 const App = () => {
   return (
-    <Slider/>
+    <Controlled/>
   )
 }
-
 export default App;
