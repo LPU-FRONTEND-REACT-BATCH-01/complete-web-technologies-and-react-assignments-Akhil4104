@@ -1,45 +1,62 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import HomeLayout from '../Layouts/HomeLayout'
 import Landing from '../Pages/Landing'
-import Product from '../Pages/Product'
+import Products from '../Pages/Products'
 import About from '../Pages/About'
 import Cart from '../Pages/Cart'
+import ProductsLayout from '../Layouts/ProductsLayout'
+import Category from '../Pages/Category'
+import ViewMore from '../Components/ViewMore'
 
 const AppRouter = () => {
     const router = createBrowserRouter([
         {
-            path: "/",
-            element: <HomeLayout />,
-            children: [
+            path:'/',
+            element:<HomeLayout/>,
+            children:[
                 {
-                    index: true,
-                    element: <Landing />
+                    index:true,
+                    element:<Landing/>
                 },
                 {
-                    path: "landing",
-                    element: <Landing />
+                    path:'products',
+                    element:<ProductsLayout/>,
+                    children:[
+                        {
+                            index:true,
+                            element:<Products/>
+                        },
+                        {
+                            path: ':id',
+                            element:<ViewMore/>
+                        },
+                        {
+                            path:'category/:category',
+                            element:<Category/>
+                        },
+                        {
+                            path:'category/:category/:id',
+                            element:<ViewMore/>
+                        }
+                    ]
                 },
                 {
-                    path: "products",
-                    element: <Product />
+                    path:'about',
+                    element:<About/>
                 },
                 {
-                    path: "about",
-                    element: <About />
-                },
-                {
-                    path: "cart",
-                    element: <Cart />
+                    path:'cart',
+                    element:<Cart/>
                 }
             ]
         }
     ])
   return (
-      <div>
-          <RouterProvider router={router} />
-    </div>
+    <>
+        <RouterProvider router={router} />
+    </>
   )
 }
 
-export default AppRouter;
+export default AppRouter
