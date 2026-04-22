@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #23272f;
+            color:#ffffff;
+            line-height: 1.5;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            background-color: #1d2027;
+            justify-content: space-between;
+            padding: 12px 20px;
+        }
+
+        .nav-left{
+            display: flex;
+            align-items: center;
+            gap:18px;
+            flex: 1;
+        }
+
+        .logo-small{
+            width: 32px;
+            height:32px;
+        }
+
+        .version{
+            font-weight: 500;
+            font-size: 13px;
+            color: #99a1b3;
+        }
+
+        .search-box{
+            display: flex;
+            align-items: center;
+            background-color:#30353f;
+            color: #99a1b3;
+            border-radius: 20px;
+            padding: 0 16px;
+            height: 40px;
+            flex: 1;
+            max-width: 800px;
+        }
+
+        .search-box i{
+            margin-right: 8px;
+        }
+
+        .search-box span{
+            flex: 1;
+        }
+
+        .shortcut{
+            display: flex;
+            gap: 4px;
+        }
+
+        kbd {
+            background: #23272f;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 0.7rem;
+            border: 1px solid #404756;
+        }
+
+        .nav-right{
+            display: flex;
+            align-items: center;
+            gap:34px;
+        }
+
+        .nav-link{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .nav-link:hover{
+            color: #61dafb;
+        }
+        .nav-icon i{
+            margin-left: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img class="logo-small" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+            <span class="version">v19.2</span>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Search</span>
+                <div class="shortcut">
+                    <kbd>Ctrl</kbd>
+                    <kbd>K</kbd>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="nav-link">Learn</a>
+            <a href="#" class="nav-link">Reference</a>
+            <a href="#" class="nav-link">Community</a>
+            <a href="#" class="nav-link">Blog</a>
+            <div class="nav-icon">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-solid fa-language"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
